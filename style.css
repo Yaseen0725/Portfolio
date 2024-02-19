@@ -1,0 +1,659 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header{
+    background-color: rgb(161, 155, 155);
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nameSection h1{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.nameSection span{
+    color: red;
+}
+
+.navbarSection ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbarSection a{
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbarSection a:hover{
+    cursor: pointer;
+    color: red;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    transition: 0.5s ease-in-out ;
+}
+
+
+
+/* hero section */
+
+#heroSection{
+    /* background-image: url(./desktop-wallpaper-portfolio.jpg); */
+    /* background-size: cover; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 90vh;
+}
+
+.detailSection{
+    margin-top: 10%;
+}
+
+.detailSection h1{
+    font-size: 60px;
+}
+
+.detailSection h3{
+    font-size: 35px;
+}
+
+.detailSection span{
+    color: red;
+    border-bottom: 3px solid;
+}
+
+.MoreInfBtn{
+    font-size: 30px;
+    margin-top: 60px;
+    margin-left: 15%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.MoreInfBtn:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    font-size: 35px;
+    transition-duration: .2s;
+}
+
+.imgSection img{
+    height: 650px;
+    width: 650px;
+    border-radius: 50%;
+}
+
+
+
+
+/* About Section */
+
+#aboutSection{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(161, 155, 155);
+}
+#aboutSection h1{
+    text-align:center;
+    font-size:45px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#aboutSection span{
+    color: red; 
+}
+
+.about_container{
+    display: flex;
+    align-items: center;
+}
+
+.img_section img{
+    width: 450px;
+    height: auto;
+    padding: 50px;
+}
+.about_content{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about_content p{
+    line-height: 2;
+    font-size: 18px;
+    margin-left: 8rem;
+    display: block;
+}
+
+.cvBtn{
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+.cvBtn:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+.about_info{
+    height: 350px;
+    width: 600px;
+    display: flex;
+    padding: 20px;
+}
+
+.about_info p{
+    font-weight: 800px;
+}
+
+
+.aboutIntro{
+   height: 300px;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   font-weight: bolder;
+}
+
+
+
+/* Services section */
+
+
+#serviceSection{
+    background-color: rgb(161, 155, 155);
+    height: 80vh;
+    margin-top: 80px;
+}
+
+.serviceTop {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.serviceTitle h6{
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight:bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.serviceTitle p{
+    letter-spacing: 1.1px;
+    list-style-type: lower-greek;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.serviceContainer span{
+    color: red;
+}
+
+.serviceBottom{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+}
+
+.serviceItem{
+    background-image: url(./desktop-wallpaper-portfolio.jpg);
+    object-fit:contain;
+    /* overflow: hidden; */
+    height: 300px;
+    width: 23%;
+    background-color: gray;
+    padding: 15px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.serviceItem h4{
+    font-size: 30px;
+    font-weight:normal;
+    margin-top: 20px;
+    margin-left: 18px; 
+    text-transform: uppercase;
+}
+
+.serviceItem p{
+    text-align: justify;
+    padding: 20px;
+}
+
+
+
+
+/* project section */
+
+#projectSection{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#projectSection h1{
+    margin-top: 80px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#projectSection span{
+    color: red;
+}
+
+.projectContainer_Odd {
+    background-color: rgb(161, 155, 155);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectContainer_Even{
+    background-color: rgb(161, 155, 155);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.ProjectInfo{
+    margin: 20px;
+}
+
+.ProjectInfo h2{
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.ProjectInfo h3{
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.projectContainer p{
+    text-align: justify;
+    letter-spacing: 1.1px;
+}
+
+.imgContainer img{
+    height: 400px;
+    width: 600px;
+}
+
+
+
+
+/* Skill section */
+
+#skillSection{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.aboutSkills{
+    margin: 0 auto;
+    max-width: 900px;
+    /* background-color: rgb(161, 155, 155); */
+}
+
+#skillSection h1{
+    /* margin-top: 80px; */
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#skillSection span{
+    color: red;
+}
+
+#skillSection p{
+    font-size: 20px;
+    /* margin-top: 20px; */
+    padding: 30px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.My-skills{
+    font-size: 30px;
+    font-weight:500;
+}
+
+
+
+/* contact section */
+
+#contactSection{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contactClass{
+    /* background-color: rgb(161, 155, 155); */
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.contactClass h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contactClass p{
+    font-size: 20px;
+    padding: 30px;
+}
+
+#contactSection span{
+    color: red;
+}
+
+.addInfo{
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.address i{
+    background-color: #6d726b;
+    padding: 25px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.address i{
+    cursor: pointer;
+    color:rgb(69, 69, 220);
+}
+
+.address h1{
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.address p{
+    margin-top: 15px;
+}
+
+.phone i{
+    background-color: #6d726b;
+    padding: 25px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.phone i{
+    cursor: pointer;
+    color:rgb(69, 69, 220);
+}
+
+.phone h1{
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.phone p{
+    margin-top: 15px;
+}
+
+.paper-plane i{
+    background-color: #6d726b;
+    padding: 25px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.paper-plane i{
+    cursor: pointer;
+    color:rgb(69, 69, 220);
+}
+
+.paper-plane h1{
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.paper-plane p{
+    margin-top: 15px;
+}
+
+
+.globe i{
+    background-color: #6d726b;
+    padding: 25px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.globe i{
+    cursor: pointer;
+    color:rgb(69, 69, 220);
+}
+
+.globe h1{
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.globe p{
+    margin-top: 15px;
+}
+
+.contactContainer{
+    background-color: rgb(161, 155, 155);
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+}
+
+.ApplicationForm_info{
+    margin-top: 50px;
+    /* padding: 50px; */
+    align-items: center;
+}
+
+.ApplicationForm_info input{
+    width: 95%;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    /* border: none; */
+}
+
+.ApplicationForm_info textarea{
+    width: 95%;
+    font-size: 20px;
+    /* margin-left: 10px; */
+    border: 1px solid black;
+    border-radius: 5px;
+    /* border:none; */
+}
+
+.submitBtn{
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.submitBtn:hover{
+    cursor: pointer;
+    background-color: red;
+    color:white;
+}
+
+
+
+/* footer section */
+
+#footSection{
+    background-color: #4f6868;
+}
+
+.footerpanel{
+    max-width: 1500px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.aboutClass h2{
+    margin-bottom: 25px;
+}
+
+.aboutClass ul{
+    margin-bottom: 20px;
+    list-style: none;
+    font-size: 15px;
+}
+
+.linkClass h2{
+    margin-bottom: 15px;
+}
+
+.linkClass ul{
+    list-style: none;
+}
+
+.linkClass a{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.serviceClass h2{
+    margin-bottom: 15px;
+}
+
+.serviceClass ul{
+    list-style:none;
+}
+
+.serviceClass a{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.questionClass h2{
+    margin-bottom: 25px;
+}
+.phoneClass{
+    margin-bottom: 20px;
+}
+.paper-planeClass{
+    margin-bottom: 15px;
+}
+.globeClass{
+    margin-bottom: 10px;
+}
+
+.globeClass a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.socialIcon{
+    /* margin: 0 auto; */
+    position: relative;
+    left: 78%;
+    max-width: 200px;
+    display: flex;
+    /* align-items: center; */
+    justify-content:space-between;
+    border-radius: 10px;
+}
+
+.socialIcon i{
+    font-size: 10px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.facebookClass{
+    color:#316FF6;
+}
+.twitterClass{
+    color: #1DA1F2;
+}
+.whatsappClass{
+    color: #25D366;
+}
+.instagramClass{
+    color: #d62976;
+}
+
+.socialIcon .facebookClass i:hover{
+    cursor: pointer;
+    background-color:#316FF6;
+    color: white;
+}
+
+.socialIcon .twitterClass i:hover{
+    cursor: pointer;
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.socialIcon .whatsappClass i:hover{
+    cursor: pointer;
+    background-color: #25D366;
+    color: white;
+}
+
+.socialIcon .instagramClass i:hover{
+    cursor: pointer;
+    background-color: #d62976;
+    color: white;
+}
+
+.copyRight{
+    background-color: #b2c1c1;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
