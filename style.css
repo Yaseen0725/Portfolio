@@ -43,12 +43,12 @@ body{
     font-weight: 600;
 }
 
-.navbarSection a:hover{
+.navbarSection a span:hover{
     cursor: pointer;
     color: red;
     border-bottom: 2px solid black;
     padding-bottom: 5px;
-    transition: 0.5s ease-in-out ;
+    transition: 0.2s ease-in-out ;
 }
 
 
@@ -100,7 +100,7 @@ body{
 
 .imgSection img{
     height: 650px;
-    width: 650px;
+    width: auto;
     border-radius: 50%;
 }
 
@@ -136,6 +136,7 @@ body{
     width: 450px;
     height: auto;
     padding: 50px;
+    border: none;
 }
 .about_content{
     padding-top: 50px;
@@ -259,8 +260,10 @@ body{
 /* project section */
 
 #projectSection{
+    /* background-color: beige; */
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 #projectSection h1{
@@ -282,6 +285,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .projectContainer_Even{
@@ -321,43 +325,73 @@ body{
 /* Skill section */
 
 #skillSection{
-    margin-top: 70px;
-    text-align: center;
-}
-
-.aboutSkills{
     margin: 0 auto;
-    max-width: 900px;
-    /* background-color: rgb(161, 155, 155); */
+    max-width: 100%;
+    height: 70vh;
+    margin-top: 70px;
 }
 
-#skillSection h1{
-    /* margin-top: 80px; */
+.aboutSkills h1{
+    text-align: center;
     font-size: 45px;
-    font-weight: bold;
     text-transform: uppercase;
 }
-
-#skillSection span{
-    color: red;
+.aboutSkills p{
+    text-align: center;
+    padding: 15px;
 }
 
-#skillSection p{
-    font-size: 20px;
-    /* margin-top: 20px; */
-    padding: 30px;
+.aboutSkills span{
+    color: red;
 }
 
 .skills{
     display: flex;
     justify-content: space-evenly;
+    /* margin-top: 50px; */
 }
 
-.My-skills{
-    font-size: 30px;
-    font-weight:500;
+h4{
+    text-align: left;
+    font-size: 20px;
 }
 
+.My-skills,h4,input {
+    width: 500px;
+    height: 20px;
+    margin-top: 30px;
+}
+
+/* .slider {
+    -webkit-appearance: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 10px;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+    color: white;
+    background-color:gold;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background: #4caf50;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 23px;
+    height: 23px;
+    background: #4caf50;
+    cursor: pointer;
+  } */
 
 
 /* contact section */
@@ -482,7 +516,9 @@ body{
     background-color: rgb(161, 155, 155);
     margin: 0 auto;
     max-width: 1200px;
+    height: 90vh;
     display: flex;
+    margin-top: 30px;
 }
 
 .ApplicationForm_info{
@@ -495,7 +531,7 @@ body{
     width: 95%;
     font-size: 20px;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid black;
     border-radius: 5px;
     /* border: none; */
@@ -504,6 +540,7 @@ body{
 .ApplicationForm_info textarea{
     width: 95%;
     font-size: 20px;
+    padding: 10px;
     /* margin-left: 10px; */
     border: 1px solid black;
     border-radius: 5px;
@@ -558,6 +595,9 @@ body{
 .linkClass ul{
     list-style: none;
 }
+.linkClass ul a{
+    color: black;
+}
 
 .linkClass a{
     text-decoration: none;
@@ -570,6 +610,10 @@ body{
 
 .serviceClass ul{
     list-style:none;
+}
+
+.serviceClass ul a{
+    color: black;
 }
 
 .serviceClass a{
@@ -596,12 +640,10 @@ body{
 }
 
 .socialIcon{
-    /* margin: 0 auto; */
     position: relative;
     left: 78%;
     max-width: 200px;
     display: flex;
-    /* align-items: center; */
     justify-content:space-between;
     border-radius: 10px;
 }
