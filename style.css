@@ -19,6 +19,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 .nameSection h1{
@@ -193,6 +194,7 @@ body{
     background-color: rgb(161, 155, 155);
     height: 80vh;
     margin-top: 80px;
+    overflow: hidden;
 }
 
 .serviceTop {
